@@ -1,6 +1,9 @@
 body{
+  width: 1300px;
+  height: 600px;
   background-image: url('res/background.png');
   background-size: 1300px 600px;
+  background-repeat: no-repeat;
 }
 
 #sitebody{
@@ -12,7 +15,7 @@ body{
 #left_bar{
   width: 300px;
   height: 400px;
-  text-align: center;
+  text-align: left;
   line-height: 80px;
   float: left;
 }
@@ -22,19 +25,62 @@ body{
   width: 800px;
   height: 400px;
   line-height: 80px;
-  text-align: center;
-  background-color: #F2FFF2;
+  text-align: left;
 }
 
 #footer{
   height: 100px;
-  text-align: center;
-  background-color: #FFD4D4;
-  line-height: 100px;
+  text-align: left;
 }
 
 .item_btn img{
   width: 100px;
   height: 100px;
 }
+
+#brush{
+  width: 100px;
+  height: 100px;
+}
+
+#basket{
+  width: 150px;
+  height: 100px;
+}
+
+#shovel{
+  width: 100px;
+  height: 100px;
+}
+
+.item img{
+  position: absolute;
+}
+
+#salt3{
+  padding-left: 100px;
+  padding-top: 20px;
+  width: 200px;
+  height: 100px;
+}
+
+#salt2{
+  padding-left: 150px;
+  width: 200px;
+  height: 100px;
+}
+
+#salt{
+  padding-left: 300px;
+  padding-top: 30px;
+  width: 100px;
+  height: 50px;
+}
+
+#mountain{
+  padding-left: 200px;
+  width: 300px;
+  height: 200px;
+}
+
 
