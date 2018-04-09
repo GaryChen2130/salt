@@ -8,13 +8,13 @@ body{
 
 #sitebody{
   width: 1200px;
-  height: 500px;
+  height: 600px;
   margin: 0 auto;
 }
 
 #left_bar{
   width: 300px;
-  height: 400px;
+  height: 300px;
   text-align: left;
   line-height: 80px;
   float: left;
@@ -23,13 +23,13 @@ body{
 #content{
   margin-left: 300px;
   width: 800px;
-  height: 400px;
+  height: 300px;
   line-height: 80px;
   text-align: left;
 }
 
 #footer{
-  height: 100px;
+  height: 300px;
   text-align: left;
 }
 
@@ -78,9 +78,51 @@ body{
 }
 
 #mountain{
-  padding-left: 200px;
+  padding-left: 100px;
   width: 300px;
   height: 200px;
+  position: absolute;
+}
+
+ .control_btn img{
+  width: 160px;
+  height: 80px;
+ } 
+
+ #intro_btn{
+  padding-left: 700px;
+  padding-top: 150px;
+ }
+
+#shade{
+  background-image: url('res/shade.png');
+  background-size: 1300px 600px; 
+  width: 1300px;
+  height: 600px;
+  position: absolute;
+}
+
+#start_btn{
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  padding-left: 590px;
+  padding-top: 240px;
+}
+
+#intro_page{
+  width: 1300px;
+  height: 600px;
+  position: absolute;
+  background-image: url('res/shade.png');
+  background-size: 1300px 600px;
+}
+
+#intro_page p{
+  color: white;
+  font-size: 30px;
+  width: 700px;
+  padding-left: 300px;
 }
 
 

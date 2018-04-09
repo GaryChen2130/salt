@@ -2,6 +2,9 @@ $(document).ready(function(){
   $('#brush').hide();
   $('#basket').hide();
   $('#shovel').hide();
+  $('#shade').css('left','0px');
+  $('#shade').css('top','0px');
+  $('#intro_page').hide();
 
 /*item_btn onClick()*/
 
@@ -139,12 +142,80 @@ $('#mountain').hover(function(){
   if((on_hand == 2) && (mt.width < 500)){
     $('#mountain').css('width',(mt.width + 6*basket_state) + "px");
     $('#mountain').css('height',(mt.height + 4*basket_state) + "px");
+    $('#mountain').css('left',(mt.left - 6*basket_state) + "px");
+    $('#mountain').css('top',(mt.top - 4*basket_state) + "px");
     basket_state = 0;
     basket.setAttribute("src","res/basket.png");
   }
 });
 
 
+/* Web Control Buttons */
+
+$('#start_btn').hover(
+    function(){
+      $('#start_btn').css('width','140px');
+      $('#start_btn').css('height','140px');
+    },
+    function(){
+      $('#start_btn').css('width','120px');
+      $('#start_btn').css('height','120px');
+    }
+);
+
+$('#intro_btn').hover(
+    function(){
+      $('#intro_btn').css('width','200px');
+      $('#intro_btn').css('height','100px');
+    },
+    function(){
+      $('#intro_btn').css('width','160px');
+      $('#intro_btn').css('height','80px');
+    }
+);
+
+$('#restart_btn').hover(
+    function(){
+      $('#restart_btn').css('width','200px');
+      $('#restart_btn').css('height','100px');
+    },
+    function(){
+      $('#restart_btn').css('width','160px');
+      $('#restart_btn').css('height','80px');
+    }
+);
+
+$('#start_btn').click(function(){
+  $('#shade').hide();
+});
+
+$('#intro_btn').click(function(){
+  $('#basket').hide();
+  $('#intro_page').show();
+  $('#intro_page').css('left','0px');
+  $('#intro_page').css('top','0px');
+});
+
+$('#restart_btn').click(function(){
+    on_hand = 0;
+    $('#brush').hide();
+    $('#basket').hide();
+    $('#shovel').hide();
+    basket_state = 0;
+    basket.setAttribute("src","res/basket.png");
+    pile_state = 0;
+    on_pile = false;
+    $('#salt').css('width','100px');
+    $('#salt').css('height','50px');
+    $('#mountain').css('left','70px');
+    $('#mountain').css('top','320px');
+    $('#mountain').css('width','300px');
+    $('#mountain').css('height','200px');
+});
+
+$('#intro_page').click(function(){
+  $('#intro_page').hide();    
+});
 
 });
 
